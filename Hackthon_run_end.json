@@ -1,0 +1,39 @@
+{
+
+
+  "project": "Honeywell RAG Pipeline",
+  "create_own_env":  "run command on terminal  python -m venv .venv ",
+   "install": "pip install -r requirements.txt",
+
+
+  "description": "An end-to-end Retrieval-Augmented Generation (RAG) system that answers questions from PDF documents using FAISS vector search, Groq LLM, and an Open Source LLM with FastAPI support.",
+  
+  "modules": {
+    "ingestion": "ingestion.ipynb - Extracts PDF content, performs chunking, generates embeddings, and creates the FAISS vector database.",
+    
+    "question_answering": {
+      "groq": "Q&A_groq.ipynb - Retrieves relevant chunks from FAISS and generates answers using Groq (Llama 3.3 70B).",
+      "opensource": "Q&A_openSource_llm.ipynb - Retrieves relevant chunks from FAISS and generates answers using Google FLAN-T5."
+    },
+
+
+    "fastapi": "app.py - Provides REST APIs for both Groq and Open Source LLMs."
+  },
+
+
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "vector_database": "FAISS",
+  
+  
+  "api_endpoints": {
+    "GET /": "Health Check",
+    "POST /groq_chat": "Generate answers using Groq LLM",
+    "POST /opensource_chat": "Generate answers using Open Source LLM"
+  },
+
+  "run": {
+    "install": "pip install -r requirements.txt",
+    "run in terminal": "uvicorn app:app --reload",
+    "swagger": "http://127.0.0.1:8000/docs"
+  }
+}

@@ -1,0 +1,74 @@
+[
+    {
+        "query": "What were the main causes for increased lead times mentioned in the report?",
+        "answer": "Region B showed a 7-day increase in average lead time during monsoon months. Additionally, stockouts in Region A led to a 12% increase in expedited shipments. However, the main cause for increased lead times is only explicitly mentioned for Region B, which is the monsoon months.",
+        "retrieved_chunks": [
+            {
+                "page": 2,
+                "score": 1.1108992099761963
+            },
+            {
+                "page": 3,
+                "score": 1.2310266494750977
+            },
+            {
+                "page": 4,
+                "score": 1.3298777341842651
+            }
+        ]
+    },
+    {
+        "query": "List the KPIs for Region B from the Q3 table.",
+        "answer": "For Region B, the KPIs are:\n1. Avg Lead Time (days): 21\n2. On-time Delivery (%): 88.1\n3. Expedited Shipments (%): 12.5\n4. Inventory Turns: 2.8",
+        "retrieved_chunks": [
+            {
+                "page": 3,
+                "score": 0.7745575308799744
+            },
+            {
+                "page": 3,
+                "score": 1.146371603012085
+            },
+            {
+                "page": 2,
+                "score": 1.4850177764892578
+            }
+        ]
+    },
+    {
+        "query": "Which parts have lead time more than 30 days?",
+        "answer": "P-1002 Navigation Sensor and P-1003 Hydraulic Actuator have lead times more than 30 days, with 45 days and 60 days respectively.",
+        "retrieved_chunks": [
+            {
+                "page": 4,
+                "score": 0.9924439787864685
+            },
+            {
+                "page": 5,
+                "score": 1.0442023277282715
+            },
+            {
+                "page": 3,
+                "score": 1.0570505857467651
+            }
+        ]
+    },
+    {
+        "query": "What is the procedure for critical parts exceptions and the SLA for documenting root cause?",
+        "answer": "For critical parts exceptions, the procedure follows an expedited PO path with parallel approvals. The SLA for documenting the root cause is within 48 hours.",
+        "retrieved_chunks": [
+            {
+                "page": 5,
+                "score": 1.161396861076355
+            },
+            {
+                "page": 1,
+                "score": 1.5435497760772705
+            },
+            {
+                "page": 6,
+                "score": 1.5442249774932861
+            }
+        ]
+    }
+]

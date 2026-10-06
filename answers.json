@@ -1,0 +1,74 @@
+[
+    {
+        "query": "What were the main causes for increased lead times mentioned in the report?",
+        "answer": "You are a question answering assistant.\n\nAnswer ONLY from the context below.\n\nIf the answer is not present, reply exactly:\n\nI don't know from the document.\n\nContext:\nOperational Observations (cid:127) Region A experienced a 12% increase in expedited shipments due to stockouts. (cid:127) Region B showed a 7-day increase in average lead time during monsoon months. (cid:127) Spares accuracy (picks vs orders) remained at 98.2% but returns increased slightly due to labeling errors. Notes on data sources: Data aggregated from ERP, WMS, and Vendor portals. Timestamp alignment used UTC.\n\n0 1 2 3 Metric Region A Region B Region C Avg Lead Time (days) 14 21 12 On-time Delivery (%) 93.4 88.1 95.0 Expedited Shipments (%) 6.1 12.5 4.0 Inventory Turns 3.5 2.8 4.1\n\nSample Parts List Part ID Description Category Qty On Hand Lead Time (days) P-1001 Avionics Control Module Control 25 30 P-1002 Navigation Sensor Sensor 10 45 P-1003 Hydraulic Actuator Actuator 5 60 P-1004 Power Regulator Power 40 20 P-1005 Comms Antenna Antenna 18 25 Table notes: Lead time is the supplier-provided estimate; Qty On Hand is snapshot at close of quarter.\n\n\n\nQuestion:\nWhat were the main causes for increased lead times mentioned in the report?\n\nAnswer:",
+        "retrieved_chunks": [
+            {
+                "page": 2,
+                "score": 1.1108992099761963
+            },
+            {
+                "page": 3,
+                "score": 1.2310266494750977
+            },
+            {
+                "page": 4,
+                "score": 1.3298777341842651
+            }
+        ]
+    },
+    {
+        "query": "List the KPIs for Region B from the Q3 table.",
+        "answer": "You are a question answering assistant.\n\nAnswer ONLY from the context below.\n\nIf the answer is not present, reply exactly:\n\nI don't know from the document.\n\nContext:\nKey Performance Indicators (KPIs) - Q3 Metric Region A Region B Region C Avg Lead Time (days) 14 21 12 On-time Delivery (%) 93.4 88.1 95.0 Expedited Shipments (%) 6.1 12.5 4.0 Inventory Turns 3.5 2.8 4.1\n\n0 1 2 3 Metric Region A Region B Region C Avg Lead Time (days) 14 21 12 On-time Delivery (%) 93.4 88.1 95.0 Expedited Shipments (%) 6.1 12.5 4.0 Inventory Turns 3.5 2.8 4.1\n\nOperational Observations (cid:127) Region A experienced a 12% increase in expedited shipments due to stockouts. (cid:127) Region B showed a 7-day increase in average lead time during monsoon months. (cid:127) Spares accuracy (picks vs orders) remained at 98.2% but returns increased slightly due to labeling errors. Notes on data sources: Data aggregated from ERP, WMS, and Vendor portals. Timestamp alignment used UTC.\n\n\n\nQuestion:\nList the KPIs for Region B from the Q3 table.\n\nAnswer:",
+        "retrieved_chunks": [
+            {
+                "page": 3,
+                "score": 0.7745575308799744
+            },
+            {
+                "page": 3,
+                "score": 1.146371603012085
+            },
+            {
+                "page": 2,
+                "score": 1.4850177764892578
+            }
+        ]
+    },
+    {
+        "query": "Which parts have lead time more than 30 days?",
+        "answer": "You are a question answering assistant.\n\nAnswer ONLY from the context below.\n\nIf the answer is not present, reply exactly:\n\nI don't know from the document.\n\nContext:\nSample Parts List Part ID Description Category Qty On Hand Lead Time (days) P-1001 Avionics Control Module Control 25 30 P-1002 Navigation Sensor Sensor 10 45 P-1003 Hydraulic Actuator Actuator 5 60 P-1004 Power Regulator Power 40 20 P-1005 Comms Antenna Antenna 18 25 Table notes: Lead time is the supplier-provided estimate; Qty On Hand is snapshot at close of quarter.\n\nSpares Replenishment Process The replenishment pipeline triggers reorders when forecasted demand exceeds safety stock. Safety stock is computed using historical demand variance and desired service level. Vendor lead times are updated monthly from vendor portals; exception workflows exist for critical parts. Exception Handling Critical parts (defined as those with mean time to failure < 1000 hours) follow an expedited PO path with parallel approvals. All exceptions require a documented root cause within 48 hours.\n\n0 1 2 3 Metric Region A Region B Region C Avg Lead Time (days) 14 21 12 On-time Delivery (%) 93.4 88.1 95.0 Expedited Shipments (%) 6.1 12.5 4.0 Inventory Turns 3.5 2.8 4.1\n\n\n\nQuestion:\nWhich parts have lead time more than 30 days?\n\nAnswer:",
+        "retrieved_chunks": [
+            {
+                "page": 4,
+                "score": 0.9924439787864685
+            },
+            {
+                "page": 5,
+                "score": 1.0442023277282715
+            },
+            {
+                "page": 3,
+                "score": 1.0570505857467651
+            }
+        ]
+    },
+    {
+        "query": "What is the procedure for critical parts exceptions and the SLA for documenting root cause?",
+        "answer": "You are a question answering assistant.\n\nAnswer ONLY from the context below.\n\nIf the answer is not present, reply exactly:\n\nI don't know from the document.\n\nContext:\nSpares Replenishment Process The replenishment pipeline triggers reorders when forecasted demand exceeds safety stock. Safety stock is computed using historical demand variance and desired service level. Vendor lead times are updated monthly from vendor portals; exception workflows exist for critical parts. Exception Handling Critical parts (defined as those with mean time to failure < 1000 hours) follow an expedited PO path with parallel approvals. All exceptions require a documented root cause within 48 hours.\n\nHoneywell Avionics — Spares Supply Chain Report This internal report summarises recent observations and KPIs for the spares supply chain for the Avionics division. It contains quantitative metrics, operational notes, and a sample parts table to support a Retrieval-Augmented-Generation (RAG) pipeline exercise. Executive Summary Over the past quarter, lead times have varied across regions. Root causes include vendor delays and customs clearance. Recommendations include incremental automation for inventory reordering and improved vendor SLAs.\n\nAppendix Glossary (cid:127) ERP: Enterprise Resource Planning system. (cid:127) WMS: Warehouse Management System. (cid:127) SLA: Service Level Agreement. (cid:127) Lead Time: Time between order and receipt. Contact: Supply Chain Analytics Team — analytics@honeywell.example\n\n\n\nQuestion:\nWhat is the procedure for critical parts exceptions and the SLA for documenting root cause?\n\nAnswer:",
+        "retrieved_chunks": [
+            {
+                "page": 5,
+                "score": 1.161396861076355
+            },
+            {
+                "page": 1,
+                "score": 1.5435497760772705
+            },
+            {
+                "page": 6,
+                "score": 1.5442249774932861
+            }
+        ]
+    }
+]

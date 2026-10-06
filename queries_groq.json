@@ -1,0 +1,14 @@
+[
+  {
+    "query": "What were the main causes for increased lead times mentioned in the report?"
+  },
+  {
+    "query": "List the KPIs for Region B from the Q3 table."
+  },
+  {
+    "query": "Which parts have lead time more than 30 days?"
+  },
+  {
+    "query": "What is the procedure for critical parts exceptions and the SLA for documenting root cause?"
+  }
+]
